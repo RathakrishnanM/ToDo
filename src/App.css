@@ -1,0 +1,42 @@
+/* Frame .css */
+
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.frame-container,
+.frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame {
+  width: 30.2rem;
+  display: block;
+  border: 1px solid rgb(129, 129, 129, 0.5);
+}
+
+#subtitle {
+  padding-left: 10px;
+}
+
+#title::placeholder,
+#subtitle::placeholder {
+  font-size: 3rem;
+  color: rgb(129, 129, 129);
+  letter-spacing: 1px;
+}
+
+#subtitle::placeholder {
+  font-size: 1rem;
+}
+
+#title:focus,
+#subtitle:focus {
+  border: rgb(129, 129, 129, 0.5);
+  outline: none;
+}
